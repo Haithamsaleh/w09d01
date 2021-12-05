@@ -34,7 +34,9 @@ const register = async() => {
     <>
     {/* register */}
       <input type="text" name="name" placeholder="name" onChange={(e) => setName (e.target.value)} /> 
+      <br/>
       <input type="password" name="password" placeholder="password" onChange={(e) => setPassword (e.target.value)}   /> 
+      <br/>
       <button onClick={register}>register</button>
 
 

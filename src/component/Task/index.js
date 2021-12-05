@@ -1,32 +1,12 @@
-import axios from "axios";
-import React,{useEffect,useState} from "react";
-const BASE_URL = process.env.REACT_APP_BASE_URL;
+import React from 'react'
+import './style.css'
 
-
-function Tasks() {
-
-const tasks = async() => {
-  try { 
-    const result = 
-  
-    await axios.get(`${BASE_URL}/todos`,{
-    })
-    console.log(" successful");
-  } catch (error) {
-      console.log(" failed");
-    console.log(error);
-    
-  }
- 
-
+const Tasks = () => {
+    return (
+        <div className="task">
+            <h1>Tasks</h1>
+        </div>
+    )
 }
 
-  
-  return (
-
-    <>
-    </>
-  );
-}
-
-export default Tasks;
+export default Tasks
